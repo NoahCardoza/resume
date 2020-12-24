@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noah Cardoza</title>
+  <style>
+    @page {
+      margin: 0cm !important;
+    }
+
+    @media print {
+      html {
+        height: 97%;
+        width: 8.5in;
+      }
+
+      body {
+        width: 8.5in;
+      }
+    }
+
+    @media screen {
+      html {
+        height: 11in;
+        margin: 0px auto;
+      }
+
+      body {
+        width: 8.5in;
+        /* border: 1px solid black; */
+        margin: 0px auto;
+      }
+    }
+
+    body {
+      font-family: Helvetica Neue;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
+      overflow: hidden;
+
+      position: relative;
+      height: 100%;
+
+    }
+
+    .right {
+      float: right;
+    }
+
+    .tt-none {
+      text-transform: none;
+    }
+
+    .tt-lowercase {
+      text-transform: lowercase;
+    }
+
+    a {
+      color: #409EFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #66b1ff;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      color: #7781f1;
+    }
+
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h3,
+    h4 {
+      margin: .3rem 0;
+    }
+
+    h3 {
+      color: #4e5173;
+      font-size: 1rem;
+    }
+
+    h3 span:not(.ignore) {
+      font-weight: 500;
+    }
+
+    h4 {
+      color: #4e5173;
+      font-size: .8rem;
+      font-weight: 400
+    }
+
+    body>header,
+    body>footer {
+      text-align: center;
+    }
+
+    body>footer {
+      margin: auto;
+      position: absolute;
+      left: 0;
+      bottom: 2px;
+      right: 0;
+    }
+
+    body>section {
+      display: flex;
+    }
+
+    .left-column {
+      width: 2.5in;
+      margin-right: 0.2in;
+    }
+
+    .right-column {
+      width: calc(100% - 2.5in);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    ul:not(.inline) li {
+      margin-left: .4rem;
+      padding-left: .8rem;
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABEklEQVR4nO2aSw6DMAxEnR6wUs/Sc3AWJC7YriyhNB87hMSe5q0Bz2MSFihEIIQ7Hvp8vT+1a4596zq7y8MkwWtcFbt0cw+BmFahppvuEIjRCj20A0ZItMwRW48SSCFpR9TITAnp/KrIbAmmlqMoYkWCKeXJiliTYHK51F8tqyRFrLbBpPL9iFiXYOKcmEvLSxvMOS9eI97aYDg3XiPegREJRH73xxmYRpaINZaINZaINbBEev9QHs2xbwGrEQTwRLzuE86N1wiRv1bOeTEbIfLTSpwz2Yh1mVQ+3KXFWG0ll6vYiDWZUp7q0rIiU8sh2iOzZSTz1QFH/gPTvED1V2tUO9o5/30WJcb96aAcM85rfQF+1nJIByh4YAAAAABJRU5ErkJggg==) no-repeat left center;
+      background-size: 6px 6px;
+
+    }
+
+    ul.inline {
+      padding: 0;
+      text-align: center;
+      list-style-type: none;
+    }
+
+    ul.inline li {
+      display: inline;
+      white-space: nowrap;
+    }
+
+    .bullet {
+      word-spacing: 1em;
+      background-repeat: no-repeat;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABEklEQVR4nO2aSw6DMAxEnR6wUs/Sc3AWJC7YriyhNB87hMSe5q0Bz2MSFihEIIQ7Hvp8vT+1a4596zq7y8MkwWtcFbt0cw+BmFahppvuEIjRCj20A0ZItMwRW48SSCFpR9TITAnp/KrIbAmmlqMoYkWCKeXJiliTYHK51F8tqyRFrLbBpPL9iFiXYOKcmEvLSxvMOS9eI97aYDg3XiPegREJRH73xxmYRpaINZaINZaINbBEev9QHs2xbwGrEQTwRLzuE86N1wiRv1bOeTEbIfLTSpwz2Yh1mVQ+3KXFWG0ll6vYiDWZUp7q0rIiU8sh2iOzZSTz1QFH/gPTvED1V2tUO9o5/30WJcb96aAcM85rfQF+1nJIByh4YAAAAABJRU5ErkJggg==);
+      background-size: 6px 6px;
+
+      background-position: center;
+    }
+
+    .experience+.experience,
+    .project+.project,
+    .award+.award {
+      margin-top: 1rem;
+    }
+
+    .experience header,
+    .project header {
+      margin-bottom: .5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 style="text-align: center"><span style="font-weight: 200;">Noah</span> Cardoza</h1>
+    <div>
+      <ul class="inline">
+        <li><a href="https://github.com/NoahCardoza">github.com/NoahCardoza</a></li><span class="bullet">
+        </span>
+        <li><a href="https://linkedin.com/in/noahcardoza">/in/noahcardoza</a></li><span class="bullet">
+        </span>
+        <li><a href="https://noahcardoza.dev">noahcardoza.dev</a></li><span class="bullet">
+        </span>
+      </ul>
+    </div>
+  </header>
+  <section>
+    <div class="left-column">
+      <h2>Education</h2>
+      <div>
+        <h3>Enterprise Security A.A.</h3>
+        <h4>June 2020&nbsp;<span class="right"><a href="https://www.deanza.edu/">De Anza College</a></span></h4>
+      </div>
+      <div>
+        <h3>C piscine</h3>
+        <h4>Sept 2017&nbsp;<span class="right"><a href="https://www.42.us.org/">École 42</a></span></h4>
+      </div>
+      <h2>Skills</h2>
+      <div>
+        <ul class="inline skills">
+          <li>Bootstrap</li><span class="bullet">
+          </span>
+          <li>SSL</li><span class="bullet">
+          </span>
+          <li>Discord.py</li><span class="bullet">
+          </span>
+          <li>Element UI</li><span class="bullet">
+          </span>
+          <li>Eventbrite</li><span class="bullet">
+          </span>
+          <li>Express</li><span class="bullet">
+          </span>
+          <li>FastAPI</li><span class="bullet">
+          </span>
+          <li>JWT/S/E</li><span class="bullet">
+          </span>
+          <li>Moodle</li><span class="bullet">
+          </span>
+          <li>NodeJS</li><span class="bullet">
+          </span>
+          <li>Nuxt</li><span class="bullet">
+          </span>
+          <li>Postgres</li><span class="bullet">
+          </span>
+          <li>Python</li><span class="bullet">
+          </span>
+          <li>Salesforce</li><span class="bullet">
+          </span>
+          <li>Vue</li><span class="bullet">
+          </span>
+        </ul>
+      </div>
+
+      <h2>AWARDS & DISTINCTIONS</h2>
+      <div class="award">
+        <h3>MLH&nbsp;<span class="right"><a href="https://ctf.mlh-fellowship.space/teams/7">Fellowship CTF</a></span>
+        </h3>
+        <h4>Dec 2020<span class="right"><b>1<sup class="tt-lowercase">st</sup></b>/45</span></h4>
+      </div>
+      <div class="award">
+        <h3>MLH&nbsp;<span class="right"><a href="https://devpost.com/software/project-hub">Halfway Hackathon</a></span>
+        </h3>
+        <h4>Nov 2020<span class="right"><b>1<sup class="tt-lowercase">st</sup></b>/50</span></h4>
+      </div>
+      <div class="award">
+        <h3>ÉCOLE 42&nbsp;<span class="right">C Piscine</span></h3>
+        <h4>Aug 2017<span class="right"><b>5<sup class="tt-lowercase">th</sup></b>/150</span></h4>
+      </div>
+    </div>
+    <div class="right-column">
+      <h2>Experience</h2>
+      <div class="experience">
+        <header>
+          <h3>NATIONAL SECURITY INNOVATION NETWORK (<a href="https://www.nsin.us/">NSIN</a>)&nbsp;<span
+              class="right">full-stack dev</span></h3>
+          <h4>Oct 2020 - Dec 2020&nbsp;<span class="right">part-time<span class="bullet">
+              </span>remote</span></h4>
+        </header>
+        <ul>
+          <li>Selected with 100 others out of 20,000 applicants.</li>
+          <li>Optimized the signing/processing of the Air Force's SAAR forms.</li>
+        </ul>
+      </div>
+      <div class="experience">
+        <header>
+          <h3>MAJOR LEAGUE HACKING (<a href="https://mlh.io/">MLH</a>)&nbsp;<span class="right">open source
+              fellow</span></h3>
+          <h4>Oct 2020 - Dec 2020&nbsp;<span class="right">part-time<span class="bullet">
+              </span>remote</span></h4>
+        </header>
+        <ul>
+          <li>Chosen among 20,000 applicants to be sponsored by Github Education.</li>
+          <li>Worked on FastAPI providing support to multi-alias support.</li>
+          <li>Improved MLH's Discord bots used in the official server.</li>
+        </ul>
+      </div>
+      <div class="experience">
+        <header>
+          <h3>Abrahamic Alliance (<a href="http://www.abrahamicalliance.org/aai/" class="tt-none">AAi</a>)&nbsp;<span
+              class="right">TECHNOLOGY SOLUTIONS
+              CONSULTANT</span></h3>
+          <h4>Aug 2017 - present&nbsp;<span class="right">contract<span class="bullet">
+              </span>remote</span></h4>
+        </header>
+        <ul>
+          <li>Identified time-consuming tasks that could be partially or fully automated.</li>
+          <li>Created cloud-based applications to automate repetitive workflows.</li>
+        </ul>
+      </div>
+      <div class="experience">
+        <header>
+          <h3>A TEAM&nbsp;<span class="right">PROGRAMMING TEACHER</span></h3>
+          <h4>Aug 2018 - Dec 2018&nbsp;<span class="right">contract<span class="bullet">
+              </span>classroom</span></h4>
+        </header>
+        <ul>
+          <li>Taught problem solving course in Python to middle schoolers.</li>
+          <li>Taught the basics of game design in Scratch to middle schoolers.</li>
+          <li>Developed personal curriculum and lesson plan for both courses.</li>
+        </ul>
+      </div>
+      <h2>PROJECTS</h2>
+      <div class="project">
+        <header>
+          <h3>Captcha Harvester&nbsp;<span class="right"><a
+                href="https://github.com/NoahCardoza/CaptchaHarvester">NoahCardoza/CaptchaHarvester</a></span></h3>
+          <h4>Python (no deps)</h4>
+        </header>
+        <ul>
+          <li>Eliminates the need for paid services like 2Captcha and Anti-Captcha.</li>
+          <li>Intercepts ReCaptcha and hCaptch tokens for later use.</li>
+        </ul>
+      </div>
+      <div class="project">
+        <header>
+          <h3>Cloud Proxy&nbsp;<span class="right"><a
+                href="https://github.com/NoahCardoza/CloudProxy">NoahCardoza/CloudProxy</a></span></h3>
+          <h4>NodeJS, Docker, Puppeteer</h4>
+        </header>
+        <ul>
+          <li>Bypass Cloudflare protection on most sites.</li>
+          <li>Abstracts all the browser automations to a simple JSON RPC API.</li>
+          <li>Adopted by <a href="https://github.com/Jackett/Jackett">Jackett</a>.</li>
+        </ul>
+      </div>
+      <div class="project">
+        <header>
+          <h3>Quora Queen</h3>
+          <h4>Python, NLP, TensorFlow, Docker, Flask, Discord.py</h4>
+        </header>
+        <ul>
+          <li>Scrapes questions from the internet.</li>
+          <li>Filters out inappropriate questions and possible duplicates.</li>
+          <li>Posts questions to <a href="https://www.quora.com">Quora</a>.</li>
+          <li>Earns money from Quora’s Partner Program.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <a href="mailto:noahcardoza@gmail.com">noahcardoza@gmail.com</a>
+  </footer>
+</body>
+
+</html>
