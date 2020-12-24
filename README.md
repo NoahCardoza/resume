@@ -1,0 +1,2 @@
+# resume
+Simplify resume writing.
